@@ -3,26 +3,29 @@
   --text_light: #fff;
   --text_med: #53627c;
   --text_dark: #1e2432;
-    --red: #ff1e42;
-    --darkred: #c3112d;
+  --red: #ff1e42;
+  --darkred: #c3112d;
   --orange: #ff8c00;
 }
 
 
 body {
-  background-color: var(--bg_main)
+  background-color: var(--bg_main);
+  overflow-x: hidden;
+
+  
 }
 
 #main {
-  
+
   font-size: 300%;
   color: var(--text_light);
   text-shadow: rgb(10, 1, 0) 1px 2px 3px;
 
-  
+
 }
 
-#formulaire{
+#formulaire {
   background-color: var(--bg_main);
   color: white;
   border: none;
@@ -33,13 +36,21 @@ body {
 #btn {
   background-color: var(--red);
   color: var(--text_light);
-  border-radius: 5px ;
-  padding: 2px ;
-  font-size: 20px ;
-  
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 20px;
+
 }
 
-.sect{
+#sect-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 50px;
+ padding: 50px;
+}
+
+.sect {
   background-color: white;
   border-radius: 25px;
 }
@@ -50,11 +61,12 @@ body {
     width: 200px;
     height: 200px;
   }
+
   #btn {
     width: 300px;
     height: 40px;
   }
-  }
+}
 
 
 
@@ -63,30 +75,33 @@ body {
     background-color: blue;
     width: 200px;
     height: 300px;
-    }
-    #btn{
-      width: 100px ;
-    }
   }
 
-  @media screen and (min-width: 700px) {
-    .sect {
-      background-color: purple;
-      width: 250px;
-      height: 300px;
-      }
-      #btn{
-        width: 100px ;
-      }
-    }
+  #btn {
+    width: 100px;
+  }
+}
 
-    @media screen and (min-width: 1000px) {
-      .sect {
-        background-color: yellow;
-        width: 300px;
-        height: 300px;
-        }
-        #btn{
-          width: 100px ;
-        }
-      }
+@media screen and (min-width: 700px) {
+  .sect {
+    background-color: purple;
+    width: 250px;
+    height: 300px;
+  }
+
+  #btn {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sect {
+    background-color: yellow;
+    width: 300px;
+    height: 350px;
+  }
+
+  #btn {
+    width: 100px;
+  }
+}
