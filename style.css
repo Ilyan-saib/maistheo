@@ -53,6 +53,7 @@ body {
 .sect {
   background-color: white;
   border-radius: 25px;
+  box-shadow: -1px 14px 22px -10px rgb(122, 122, 122);
 }
 
 @media screen and (min-width: 0px) {
@@ -104,4 +105,23 @@ body {
   #btn {
     width: 100px;
   }
+}
+
+
+.town{
+  display: inline-block;
+  
+  justify-content: end;
+  padding-left: 10%;
+font-size: xx-large;
+}
+
+.pays{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff8c00;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
