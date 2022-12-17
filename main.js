@@ -10,7 +10,7 @@
 
 
 
-const config = import.meta.env
+ const token = import.meta.env.VITE_API_KEY
 let submitte = document.getElementById("btn")
 let input = document.getElementById('formulaire')
 let sectContainer = document.getElementById("sect-container")
@@ -83,7 +83,7 @@ submitte.addEventListener('click',()=>{
  town = input.value
 
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${town}&appid=${config.VITE_API_KEY}&units=metric`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${town}&appid=${token}&units=metric`)
   .then((response) => response.json())
   .then((data) => {
 
