@@ -51,22 +51,107 @@ body {
 }
 
 .sect {
+ 
   background-color: white;
   border-radius: 25px;
   box-shadow: -1px 14px 22px -10px rgb(122, 122, 122);
 }
 
+.town{
+  font-style:oblique;
+  font-family: monospace;
+  justify-content: end;
+  padding-left: 10%;
+font-size: x-large;
+float: left;
+}
+
+.pays{
+  
+  margin-left: 5%;
+  background-color: #ff8c00;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  float: right;
+  margin-left: 5px;
+  
+}
+
+
+.pays_Content{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  margin-top: 15%;
+  font-weight: 700;
+
+}
+.temp{
+
+font-size: 55px;
+font-weight: 700;
+margin-left: 10px;
+padding-right: 50%;
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+
+}
+
+.ico{
+margin-left: 5%;
+margin-top: -10%;
+width: 100px;
+height: 100px;
+}
+
+
+.desc{
+
+font-size: x-large;
+text-align: center;
+font-weight: 700;
+font-family: monospace;
+
+}
+
+
 @media screen and (min-width: 0px) {
   .sect {
+    display: block;
     background-color: green;
-    width: 200px;
+    width: 250px;
     height: 200px;
   }
 
-  #btn {
-    width: 300px;
-    height: 40px;
-  }
+.town{
+  font-size: large;
+}
+
+.ico{
+  position: relative;
+  bottom: 5%;
+  width: 60px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.temp{
+  position: relative;
+  bottom: 8%;
+  font-size: 25px;
+  font-weight: 700;
+
+}
+.desc{
+  position: relative;
+  bottom: 20%;
+
+}
+
 }
 
 
@@ -74,54 +159,101 @@ body {
 @media screen and (min-width: 500px) {
   .sect {
     background-color: blue;
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
+  }
+  .town{
+    font-size: large;
+  }
+  .ico{
+    position: relative;
+    bottom: 0%;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .temp{
+    position: relative;
+    bottom: 1%;
+    font-size: 35px;
+    font-weight: 700;
+
   }
 
-  #btn {
-    width: 100px;
+  .desc{
+    position: relative;
+    bottom: 10%;
+  
   }
-}
+
+  }
+
 
 @media screen and (min-width: 700px) {
   .sect {
     background-color: purple;
-    width: 250px;
+    width: 350px;
     height: 300px;
   }
+  
 
-  #btn {
-    width: 100px;
+  .ico{
+    position: relative;
+    bottom: 0%;
+    width: 90px;
+    height: 90px;
+   margin-left: 38%;
+   margin-top: -10%;
+  }
+  .temp{
+    position: relative;
+    bottom: 1%;
+    font-size: 45px;
+    font-weight: 700;
+
   }
 }
 
 @media screen and (min-width: 1000px) {
   .sect {
     background-color: yellow;
-    width: 300px;
-    height: 350px;
+    width: 380px;
+    height: 325px;
   }
-
-  #btn {
-    width: 100px;
-  }
-}
-
-
 .town{
-  display: inline-block;
-  
-  justify-content: end;
-  padding-left: 10%;
-font-size: xx-large;
+    font-size: x-large;
+    font-weight: 600;
+  }
+  .ico{
+    position: relative;
+    top: 10%;
+    
+    width: 100px;
+    height: 100px;
+   margin-left: 38%;
+   margin-top: -10%;
+  }
+  .temp{
+    position: relative;
+    top: 5%;
+    left: 10%;
+    font-size: 55px;
+    font-weight: 700;
+
+  }
+ .desc{
+  position: relative;
+  top: 0%;
+ }
+
+
 }
 
-.pays{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ff8c00;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
+/*
+ data.main.temp                              
+ data.weather.0.description
+ data.weather.0.icon
+  data.weather.0.main
+*/
