@@ -61,27 +61,19 @@ function CreateElm(info) {
   sect.appendChild(info_desc);
 
 
-
   sectContainer.appendChild(sect);
-  
   
   
   
 }
 
-
-
-
 input.addEventListener('focus', () => {
   input.value = ""
 })
 
-
-
 submitte.addEventListener('click',()=>{
 
  town = input.value
-
 
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${town}&appid=${token}&units=metric`)
   .then((response) => response.json())
